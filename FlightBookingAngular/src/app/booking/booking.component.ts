@@ -43,6 +43,20 @@ export class BookingComponent implements OnInit {
   }
 
  
+  isAdmin(){
+    if(localStorage.getItem('isAdmin')==="true")
+       return true;
+    else   
+       return false;
+  }
+
+  isUser(){
+    console.log(localStorage.getItem('isAdmin'));
+    if(localStorage.getItem('isAdmin')==="true")
+       return false;
+    else   
+       return true;
+  }
 
   getBooking(){
     
@@ -63,22 +77,26 @@ export class BookingComponent implements OnInit {
     })
   }
 
-  cancelTicket(id:number){
-    this.flight.cancelTicket(id).subscribe({
-      next:(res)=>
-        {
+  
+  cancelTicket(id:any){
+
+    console.log("id is : "+id);
+     this.flight.cancelTicket(id).subscribe({
+       next:(res)=>
+         {
           this.toast.info("Ticket Cancelled")
           this.getBooking();
-      },
-      error:(err)=>
-      {  
-          this.toast.error("Something went wrong, try again later");
+       },
+       error:(err)=>
+       {  
+           this.toast.error("Something went wrong, try again later");
           
-      }
+       }
 
-    })
+     })
     
   }
+
 
   logOut(){
     localStorage.removeItem('userToken');

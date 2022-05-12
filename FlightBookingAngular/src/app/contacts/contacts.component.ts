@@ -18,4 +18,20 @@ export class ContactsComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
+  
+  isAdmin(){
+    if(localStorage.getItem('isAdmin')==="true")
+       return true;
+    else   
+       return false;
+  }
+
+  isUser(){
+    console.log(localStorage.getItem('isAdmin'));
+    if(localStorage.getItem('isAdmin')==="true")
+       return false;
+    else   
+       return true;
+  }
+
 }

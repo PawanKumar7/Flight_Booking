@@ -10,13 +10,10 @@ import { RegisterUserComponent } from './register-user/register-user.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UserService } from './shared/user.service';
-import { UserListComponent } from './user-list/user-list.component';
-import { FlightComponent } from './flight/flight.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
-import { FlightListComponent } from './flight-list/flight-list.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
@@ -38,10 +35,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { UserHomeComponent } from './user-home/user-home.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import {MatMenuModule} from '@angular/material/menu';
-import { SearchByEmailComponent } from './search-by-email/search-by-email.component';
-import { SearchByPNRComponent } from './search-by-pnr/search-by-pnr.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { SearchairlineComponent } from './searchairline/searchairline.component';
 
 
 @NgModule({
@@ -49,9 +43,6 @@ import { SearchairlineComponent } from './searchairline/searchairline.component'
     AppComponent,
     LoginComponent,
     RegisterUserComponent,
-    UserListComponent,
-    FlightComponent,
-    FlightListComponent,
     BookingComponent,
     BookingDialogComponent,
     AirlineComponent,
@@ -60,10 +51,7 @@ import { SearchairlineComponent } from './searchairline/searchairline.component'
     PageNotFoundComponent,
     UserHomeComponent,
     AdminHomeComponent,
-    SearchByEmailComponent,
-    SearchByPNRComponent,
-    ContactsComponent,
-    SearchairlineComponent
+    ContactsComponent
     
   ],
   imports: [
