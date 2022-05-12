@@ -1,0 +1,153 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/v1.0/flight/search",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9007,
+      "UpstreamPathTemplate": "/airlines/search",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/flight/search/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9007,
+      "UpstreamPathTemplate": "/airlines/search/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/flight/Booking/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9007,
+      "UpstreamPathTemplate": "/airlines/Booking/{id}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/flight/BookingHistory",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9005,
+      "UpstreamPathTemplate": "/airlines/BookingHistory",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/flight/search/{fromPlace}/{toPlace}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9007,
+      "UpstreamPathTemplate": "/airlines/search/{fromPlace}/{toPlace}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/User/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9006,
+      "UpstreamPathTemplate": "/user/search/{id}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/UserList",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9006,
+      "UpstreamPathTemplate": "/user/UserList",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/flight/register",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9007,
+      "UpstreamPathTemplate": "/airline/register",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/flight/UpdateAirline/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9005,
+      "UpstreamPathTemplate": "/airline/UpdateAirline",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/RegisterUser",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9006,
+      "UpstreamPathTemplate": "/user/RegisterUser",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/AdminUser",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9006,
+      "UpstreamPathTemplate": "/user/AdminUser",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    }
+  ],
+
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}
+
