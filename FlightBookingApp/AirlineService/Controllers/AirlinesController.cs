@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AirlineService.Controllers
 {
-    
+
     [Route("api/v1.0/flight")]
     [ApiController]
     public class AirlinesController : ControllerBase
@@ -18,7 +18,7 @@ namespace AirlineService.Controllers
         private IAirlineServiceRepository _airline;
         private IBookingRepository _booking;
 
-        public AirlinesController(IAirlineServiceRepository airline,IBookingRepository booking)
+        public AirlinesController(IAirlineServiceRepository airline, IBookingRepository booking)
         {
             this._airline = airline;
             this._booking = booking;
@@ -72,6 +72,16 @@ namespace AirlineService.Controllers
         }
 
         [HttpPut]
+        [Route("cancelbooking/{id}")]
+        public async Task<IActionResult> CancelBooking(int id)
+        {
+            await _booking.CancelBooking(id);
+
+            return Ok(true);
+
+        }
+
+        [HttpPut]
         [Route("UnblockAirline/{id}")]
         public async Task<IActionResult> UnblockAirline(int id)
         {
@@ -105,7 +115,10 @@ namespace AirlineService.Controllers
         {
             return await _airline.GetAirlinesUnblockedListAsync();
         }
-        
+
+
+
+
 
     }
 }

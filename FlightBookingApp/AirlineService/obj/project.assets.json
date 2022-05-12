@@ -11890,11 +11890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\AirlineService\\AirlineService.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\AirlineService\\AirlineService.csproj",
       "projectName": "AirlineService",
-      "projectPath": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\AirlineService\\AirlineService.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\AirlineService\\AirlineService.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\AirlineService\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\AirlineService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

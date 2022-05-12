@@ -3,6 +3,8 @@ import { FormBuilder,FormArray, FormGroup,FormControl,AbstractControl } from '@a
 import { Router } from '@angular/router';
 import { FlightsheduleService } from '../flightshedule.service';
 //import { PassengerComponent } from '../passenger/passenger.component';
+import { ToastrService } from 'ngx-toastr';
+
 
 
 @Component({
@@ -14,7 +16,8 @@ export class BookingDialogComponent implements OnInit {
 
   public bookForm!:FormGroup;
   
-  constructor(private router: Router,private fb:FormBuilder,private flight:FlightsheduleService) { }
+  constructor(private router: Router,private fb:FormBuilder,private flight:FlightsheduleService,
+    private toast:ToastrService) { }
 
   classtype:Array<string>=['NB-Class','B-Class'];
   gender:Array<string>=['Male','Female'];
@@ -67,11 +70,12 @@ export class BookingDialogComponent implements OnInit {
      this.flight.Bookticket(this.bookForm.value).
      subscribe({
        next:()=>{
-         alert("Booking done");
+         this.toast.success("Booking Completed");
+         this.bookForm.reset();
        },
        error:()=>
        {
-           alert("some Error occured");
+        this.toast.error("Some Error occured");
        }
        
      })
@@ -96,7 +100,7 @@ export class BookingDialogComponent implements OnInit {
        },
        error:()=>
        {
-           alert("some Error occured");
+        this.toast.error("Some Error occured");
        }
        
      })

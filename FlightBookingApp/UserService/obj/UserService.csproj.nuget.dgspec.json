@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\UserService\\UserService.csproj": {}
+    "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\UserService\\UserService.csproj": {}
   },
   "projects": {
-    "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\UserService\\UserService.csproj": {
+    "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\UserService\\UserService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\UserService\\UserService.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\UserService\\UserService.csproj",
         "projectName": "UserService",
-        "projectPath": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\UserService\\UserService.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\UserService\\UserService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\UserService\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\UserService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

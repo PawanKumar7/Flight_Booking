@@ -23,7 +23,7 @@
           </ul>
       </li>
         <li><a href="/bookingHistory">Booking History</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="/contacts">Contacts</a></li>
 
           <!-- <span class="example-spacer"></span> -->
           
@@ -74,8 +74,8 @@
 
                   <div class="form-group">
                     <label class="text-label">Discount Coupon <span>&nbsp;&nbsp;</span></label>
-                    <select style="width:200px;" name="form-control" formControlName="ClassType" >
-                      <option value="">Select Class </option>
+                    <select style="width:200px;" name="form-control" formControlName="DiscountId" >
+                      <option value="">Select Discount Coupon </option>
                       <option *ngFor="let val of discount" [value]="val.id">{{val.discountCode}}</option>
                     </select>      
                   </div>
@@ -96,6 +96,9 @@
                     <input style="display:none;" id="date" type="date" width=300px formControlName="ReturnDate">
                   </div>
 
+                  <div class="container-form-btn" style="align-content: center;">
+                    <button type="submit" class="form-btn btn btn-primary-submit text-bold">Submit</button>
+                  </div>
         </div>
 
         <div class="col" style="text-align: left;">
@@ -133,10 +136,9 @@
         </div> 
       </div>
     </div>
-    <div class="container-form-btn" style="align-content: center;">
+    <!-- <div class="container-form-btn" style="align-content: center;">
       <button type="submit" class="form-btn btn btn-primary-submit text-bold">Submit</button>
-    </div>
-    <br><br><br><br>
+    </div> -->
   </form>
 
 </div>

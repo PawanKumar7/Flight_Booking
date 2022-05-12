@@ -35,7 +35,7 @@ namespace AirlineService.DataModel.Repository
                 //    _airlineContext.Passengers.Add(usr);
                 //}
                 model.PassengerList = pass;
-               
+
             }
 
             return booking;
@@ -50,14 +50,14 @@ namespace AirlineService.DataModel.Repository
                 if (model.ClassType == "B-Class")
                 {
                     cost = (flight.NBcTicketCost * model.NoOfSeats);
-                     if (model.JourneyType == "Round Trip")
+                    if (model.JourneyType == "Round Trip")
                         cost = cost * 2;
-                     cost = cost - discount.Amount;
+                    cost = cost - discount.Amount;
                 }
                 else
                 {
                     cost = (flight.BcTicketCost * model.NoOfSeats);
-                     if (model.JourneyType == "Round Trip")
+                    if (model.JourneyType == "Round Trip")
                         cost = cost * 2;
                     cost = cost - discount.Amount;
                 }
@@ -71,11 +71,12 @@ namespace AirlineService.DataModel.Repository
                     EmailId = model.EmailId,
                     NoOfSeats = model.NoOfSeats,
                     DiscountId = model.DiscountId,
+                    JourneyType = model.JourneyType,
                     ClassType = model.ClassType,
                     BookingStatus = "Active",
                     ReturnDate = model.ReturnDate,
                     TotalCost = cost,
-                    PNR = model.FlightId.ToString() + model.UserId.ToString() +"-"+ new Random().Next().ToString()
+                    PNR = model.FlightId.ToString() + model.UserId.ToString() + "-" + new Random().Next().ToString()
                 };
 
                 _airlineContext.UserBooking.Add(booking);
@@ -112,8 +113,23 @@ namespace AirlineService.DataModel.Repository
                 return discountList;
 
             }
-           
 
+
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public async Task AddDiscount(DiscountModel model)
+        {
+            try
+            {
+                _airlineContext.Discount.Add(model);
+                await _airlineContext.SaveChangesAsync();
+
+            }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
@@ -127,7 +143,7 @@ namespace AirlineService.DataModel.Repository
             try
             {
 
-                UserBookingModel booking = _airlineContext.UserBooking.FirstOrDefault(x => x.Id == id);
+                UserBookingModel booking = await _airlineContext.UserBooking.FirstOrDefaultAsync(x => x.Id == id);
 
                 if (booking != null)
                 {

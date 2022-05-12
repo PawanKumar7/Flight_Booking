@@ -14491,11 +14491,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\FlightBookingApp\\FlightBookingApiGateway.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\FlightBookingApp\\FlightBookingApiGateway.csproj",
       "projectName": "FlightBookingApiGateway",
-      "projectPath": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\FlightBookingApp\\FlightBookingApiGateway.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\FlightBookingApp\\FlightBookingApiGateway.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\FlightBookingApp\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\FlightBookingApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

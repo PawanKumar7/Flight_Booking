@@ -22,7 +22,10 @@ export class FlightComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  constructor(private toast:ToastrService, private dialog:MatDialog,private flight:FlightService,private router:Router) { }
+  constructor(private toast:ToastrService, 
+    private dialog:MatDialog,
+    private flight:FlightService,
+    private router:Router) { }
 
   ngOnInit(): void {
     this.getAllFlights();

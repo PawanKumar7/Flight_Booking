@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\AirlineInventoryService.csproj": {}
+    "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\AirlineInventoryService.csproj": {}
   },
   "projects": {
-    "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\AirlineInventoryService.csproj": {
+    "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\AirlineInventoryService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\AirlineInventoryService.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\AirlineInventoryService.csproj",
         "projectName": "AirlineInventoryService",
-        "projectPath": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\AirlineInventoryService.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\AirlineInventoryService.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\FlightBookingProject\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\FlightBooking\\FlightBookingApp\\AirlineInventoryService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { UserService } from '../shared/user.service';
 
 @Component({
@@ -14,7 +15,11 @@ export class RegisterUserComponent implements OnInit {
   public userForm!:FormGroup;
   gender:string[]=['Male','Female'];
   //constructor(private formBuilder: FormBuilder,private http: HttpClient, private router:Router) { }
-  constructor(public service : UserService,private fb: FormBuilder,private router:Router,private user:UserService){}
+  constructor(public service : UserService,
+    private fb: FormBuilder,
+    private router:Router,
+    private user:UserService,private toast:ToastrService){}
+
   ngOnInit(): void {
     this.userForm = this.fb.group({
       UserName:['',Validators.required],
@@ -60,33 +65,17 @@ export class RegisterUserComponent implements OnInit {
       this.user.PostUser(body)
       .subscribe({
         next:(res) =>{
+          this.toast.success("User added successfully")
           alert("User added successfully");
           this.userForm.reset();
           this.router.navigate(['login']);
        },
        error:()=>{
-         alert("Error occured")
+        this.toast.error("Error occured")
+
        }
      })
       
     }
-  }
-
-  // OnSubmit(e:any){
- //   this.userForm.get('Gender').setValue(e.target.value);
-  //  }
-
-
-  // signUp(){
-  //   this.http.post<any>("http://localhost:9006/api/users/RegisterUser",this.signupForm.value)
-  //   .subscribe(res=> {
-  //     alert("signup success");
-  //   this.signupForm.reset;
-  //   this.router.navigate(['login']);
-  // },err=>{
-  //   alert("something went wrong")
-  // })
-
-
-  
+  }  
 }

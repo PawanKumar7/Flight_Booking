@@ -34,14 +34,14 @@ import { BookingDialogComponent } from './booking-dialog/booking-dialog.componen
 import { AirlineComponent } from './airline/airline.component';
 import { FlightsheduleComponent } from './flightshedule/flightshedule.component';
 import { FlightshedulelistComponent } from './flightshedulelist/flightshedulelist.component';
-import { PassengerComponent } from './passenger/passenger.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UserHomeComponent } from './user-home/user-home.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import {MatMenuModule} from '@angular/material/menu';
-import { AddDiscountComponent } from './add-discount/add-discount.component';
 import { SearchByEmailComponent } from './search-by-email/search-by-email.component';
 import { SearchByPNRComponent } from './search-by-pnr/search-by-pnr.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { SearchairlineComponent } from './searchairline/searchairline.component';
 
 
 @NgModule({
@@ -57,13 +57,13 @@ import { SearchByPNRComponent } from './search-by-pnr/search-by-pnr.component';
     AirlineComponent,
     FlightsheduleComponent,
     FlightshedulelistComponent,
-    PassengerComponent,
     PageNotFoundComponent,
     UserHomeComponent,
     AdminHomeComponent,
-    AddDiscountComponent,
     SearchByEmailComponent,
-    SearchByPNRComponent
+    SearchByPNRComponent,
+    ContactsComponent,
+    SearchairlineComponent
     
   ],
   imports: [
