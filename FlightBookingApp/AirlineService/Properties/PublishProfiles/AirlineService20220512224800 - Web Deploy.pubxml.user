@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATeggVdWmVUuIlTFkukMbogAAAAACAAAAAAAQZgAAAAEAACAAAABEZL8mw/q6WRcFhV3kLf5d+VPIJQfNW2KIm/beQ8Af0AAAAAAOgAAAAAIAACAAAAD5t8jwoCMp2pnw3UmxpiWkjXAssGm1tJPP5iW047pKEIAAAADpv6q9wTIzVmwNBzlDIa6I7uBe4X5pdNNtm/2A97pn2qfw/DQZvUOCtaYy2XM4TmSJDThxTVUFHMiayqQAkPnJTo1PZcjzxtvi4MofDjKsm3RrDb1SqqzCLqsxAALrNBObeaN1H7rHpUKAZQCf2ivKfx2+OoMTeojv5Ymce+T13EAAAAAOQdu0eNEXTHAeNrc5q4NKYbxD3y+e3WqHYrMyYEJJpJOEuiGjownOkWMN49KMM9FZdfb9vnr4leSRgjleZqHX</EncryptedPassword>
+    <History>True|2022-05-12T17:39:10.7638382Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="SQLConnection">
+      <Value>Data Source=tcp:airlineservicedbserver.database.windows.net,1433%3bInitial Catalog=AirlineService_db%3bUser Id=pawan%40airlineservicedbserver%3bPassword=Pwn%408510#</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="AirlineService.DataModel.DataContext">
+      <Value>Data Source=tcp:airlineservicedbserver.database.windows.net,1433%3bInitial Catalog=AirlineService_db%3bUser Id=pawan%40airlineservicedbserver%3bPassword=Pwn%408510#</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+.angular and node_modules folder is not available due to high in size.
+
+Application folder was unable to upload due to those two folders.
