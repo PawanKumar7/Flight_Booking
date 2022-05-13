@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = RabbitMQConsumer
+build_property.ProjectDir = C:\Users\User\Documents\FlightBooking\SessionPractice\Kafka\RabbitMQConsumer\RabbitMQConsumer\RabbitMQConsumer\
