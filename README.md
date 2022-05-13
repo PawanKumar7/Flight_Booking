@@ -9,11 +9,11 @@
 7. Data is communicating from angular as well
 
 8. AZURE:
-   a. Both microservices deployed on azure
-   b. For both microservice, 1 server created and 1 DB created
-   c. data is communicating between microservice URL and Database
-   d. Azure API Gateway implemented
-   e. Data is communicating with Gateway URL as well
-   f. Azure function created and practiced
-   g. VM created
+9. Both microservices deployed on azure
+10.For both microservice, 1 server created and 1 DB created
+11.Data is communicating between microservice URL and Database
+12.Azure API Gateway implemented
+13.Data is communicating with Gateway URL as well
+14.Azure function created and practiced
+15.VM created
    
